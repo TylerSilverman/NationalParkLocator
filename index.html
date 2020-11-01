@@ -15,13 +15,18 @@
   <link rel="icon" type="image/x-icon" href="assests/faviconTree.png">
   <link rel="stylesheet" href="style.css">
 </head>  
+<!-- //nav bar  -->
+<div class="jumbotron">
+  <h1 class="display-4">National Park Locator</h1>
+  <p class="lead"><h5>This website is designed to help search for National Parks within each state. Besides getting a list of each state park, you will also receive the local weather near each park. Start by selecting a State below, then press search. The user may save as a favorite and when they want to start a new list, simply press the recycle button.</h5></p>
+  <hr class="my-4">
+  <!-- <p>It uses utility classes for typography and spacing to space content out within the larger container.</p> -->
+  <!-- <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a> -->
+</div>
 
 <!-- //title of the url  -->
   <title>National Park Locator</title>
 <body>
-  <!-- //name of the title -->
-  <h2>National Park Locator</h2>
-  <p><h4>including 5 day Weather Information</h4></p>
 <!-- //quote for the image  -->
   <div class="container">
     <img class="banner" src="https://www.scti.com.au/-/media/project/scti/nz/images/travel-advice/best-national-parks-usa/usa-national-parks-header-1440x300.jpg" width="1000" height="300">
@@ -34,7 +39,7 @@
 <div class = "container">
     <section id="left">
       <div class="form-group">
-        <label for="pwd"><strong><h4>Search a State to begin:</h4></strong></label>
+        <label for="pwd"><strong><h4>Search a State:</h4></strong></label>
         <select id="stateCode" class="custom-select" aria-labelledby="dropdownMenuButton">
           <option selected value="AL">Alabama</option>
           <option selected value="AK">Alaska</option>
@@ -92,9 +97,13 @@
         </select>
       </div>
       <!-- //favorite park searches -->
+      <!-- <div class="parkList">
+        <strong><h4>Parks Results</h4></strong>
+      </div> -->
       <div class="favParkList">
-        <strong><h4>Favorite Parks <button class="cleanFav"><i class="fas fa-trash"></i></button></h4></strong>
+        <strong><h4>Favorites: <button class="cleanFav"><i class="fas fa-recycle"></i></button></h4></strong>
       </div>
+      <!-- //park list gets appended in this section  -->
       <div class="parkList">
         <strong><h4>Parks Results</h4></strong>
       </div>
