@@ -7,14 +7,14 @@
 
   body {
     font-size: 20px;
-    background-color: lightblue;
+    background-color: rgb(196, 194, 194);
     font-style: Trebuchet;
   }
   
   header{
-    padding: 20px;
-    margin-bottom: 20px;
-    background: lightblue;
+    /* padding: 2px; */
+    margin-bottom: 5px;
+    /* background: lightblue; */
     
   }
  
@@ -23,7 +23,7 @@
   float: left;
   background-color: rgb(103, 204, 238);
   width: 25%;
-  height:650px;
+  height:700px;
   border: 2px solid;
   overflow: auto;
   font-style: Lucida;
@@ -36,7 +36,7 @@
   font-style: Lucida;
   background-color:lightgreen;
   width: 50%;
-  height: 650px;
+  height: 700px;
   overflow: auto;
   border: 2px solid;
   border-color:rgb(61, 61, 32) ;
@@ -78,7 +78,7 @@ aside {
   display: block;
   background-color:burlywood;
   width:25%;
-  height:650px;
+  height:700px;
   overflow: auto;
   border: 2px solid;
   font-style: Lucida;
@@ -89,12 +89,18 @@ aside {
 }
 
 footer {
-  background-color:lightblue;
+  background-color:rgb(207, 207, 209);
   padding: 1%;
-  margin: 3px;
+  margin: 1px;
   clear: both;
   color: black;
+  font-size: 10px;
 }
+
+/* .footerBtn {
+  font-size: 5px;
+
+} */
 
 .centered {
   position: absolute;
