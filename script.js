@@ -1,5 +1,9 @@
 // Document ready function to ensure functions just run after everything is loaded in the document.
 $(document).ready(function(){
+    var timeNow = moment().format('MMMM Do YYYY, h:mm:ss a');
+    $("#date").text(timeNow);
+    
+    var timeNow = moment().hour();
 
     // Global variables for the API keys that will be used in different AJAX calls.
     var APIWeatherKey = "b37332257de420fc6dfcda2bbba28fbd";

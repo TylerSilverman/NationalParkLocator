@@ -180,14 +180,18 @@ footer {
 }
 
 /* On mouse-over, add a deeper shadow */
-.card-body:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-}
+/* .card-body:hover { */
+  /* box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2); */
+  /* border: solid;
+  margin: 50px;
+  padding: 50px;
+} */
 
 /* Add some padding inside the card container */
 .card-deck {
   padding: 16px;
 }
+@media (min-width: 576px){}
 
 /* The width is 100%, when the viewport is 800px or smaller */
 @media screen and (max-width:800px) {
@@ -195,3 +199,13 @@ footer {
     width:100%; 
   }
 }
+/* // Small devices (landscape phones, 576px and up) */
+/* @media (min-width: 576px) */
+/* // Medium devices (tablets, 768px and up) */
+/* @media (min-width: 768px)
+
+/* // Large devices (desktops, 992px and up) */
+/* @media (min-width: 992px) */
+
+/* // Extra large devices (large desktops, 1200px and up) */
+/* @media (min-width: 1200px) 
