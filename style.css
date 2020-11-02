@@ -7,7 +7,7 @@
 /* // this is for the top body of the page  */
   body {
     font-size: 20px;
-    background-color: rgb(196, 194, 194);
+    background-color: rgb(213, 213, 213);
     font-style: Trebuchet;
   }
   
@@ -17,6 +17,8 @@
     font-size: 13px;
     
   }
+
+  
  
 #left {
   text-align: center;
