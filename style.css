@@ -15,11 +15,8 @@
     /* font-style: italic; */
     margin-bottom: 5px;
     font-size: 13px;
-    
   }
 
-  
- 
 #left {
   text-align: center;
   float: left;
@@ -28,6 +25,7 @@
   border: 2px solid;
   overflow: auto;
   font-style: Lucida;
+  
 }
 
 #middle {

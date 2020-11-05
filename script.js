@@ -6,7 +6,7 @@ $(document).ready(function(){
     var timeNow = moment().hour();
 
     // Global variables for the API keys that will be used in different AJAX calls.
-    var APIWeatherKey = "b37332257de420fc6dfcda2bbba28fbd";
+    var APIWeatherKey = "b7ca59da7f0fc823f65b65547e3d223e";
     var APIParkKey = "IeMPkZS36TxiVcv1TUIT5yzANx6szGLJE5BsDsZA";
 
     // Global variable to store user state input.
