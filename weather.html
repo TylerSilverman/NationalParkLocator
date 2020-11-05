@@ -6,7 +6,7 @@
     <title>Weather</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="weather.css">
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -34,8 +34,160 @@
         </div>
      </div>
     </nav>
-
-    <h1>Coming Soon, Please use Main Screen</h1>
+    <main class = "container">
+      <div class="form-group">
+        <label for="pwd"><strong><h6> Choose a State or Type in a City, then click search:</h6></strong></label>
+        <br>
+          <select id="stateCode" class="searchInput2" aria-labelledby="dropdownMenuButton">
+            <option selected value="Alabama">Alabama</option>
+            <option selected value="Alaska">Alaska</option>
+            <option selected value="Arizona">Arizona</option>
+            <option selected value="Arkansas">Arkansas</option>
+            <option selected value="California">California</option>
+            <option selected value="Colorado">Colorado</option>
+            <option selected value="Connecticut">Connecticut</option>
+            <option selected value="Delaware">Delaware</option>
+            <option selected value="District of Columbia">District of Columbia</option>
+            <option selected value="Florida">Florida</option>
+            <option selected value="Georgia">Georgia</option>
+            <option selected value="Hawaii">Hawaii</option>
+            <option selected value="Idaho">Idaho</option>
+            <option selected value="Illinois">Illinois</option>
+            <option selected value="Indiana">Indiana</option>
+            <option selected value="Iowa">Iowa</option>
+            <option selected value="Kansas">Kansas</option>
+            <option selected value="Kentucky">Kentucky</option>
+            <option selected value="Lousiana">Lousiana</option>
+            <option selected value="Maine">Maine</option>
+            <option selected value="Maryland">Maryland</option>
+            <option selected value="Massachussetts">Massachussetts</option>
+            <option selected value="Michigan">Michigan</option>
+            <option selected value="Minnesota">Minnesota</option>
+            <option selected value="Mississippi">Mississippi</option>
+            <option selected value="Missouri">Missouri</option>
+            <option selected value="Montana">Montana</option>
+            <option selected value="Nebraska">Nebraska</option>
+            <option selected value="Nevada">Nevada</option>
+            <option selected value="New Hampshire">New Hampshire</option>
+            <option selected value="New Jersey">New Jersey</option>
+            <option selected value="New Mexico">New Mexico</option>
+            <option selected value="New York">New York</option>
+            <option selected value="North Carolina">North Carolina</option>
+            <option selected value="North Dakota">North Dakota</option>
+            <option selected value="Ohio">Ohio</option>
+            <option selected value="Oklahoma">Oklahoma</option>
+            <option selected value="Oregon">Oregon</option>
+            <option selected value="Pennsylvania">Pennsylvania</option>
+            <option selected value="Rhode Island">Rhode Island</option>
+            <option selected value="South Carolina">South Carolina</option>
+            <option selected value="South Dakota">South Dakota</option>
+            <option selected value="Tennessee">Tennessee</option>
+            <option selected value="Texas">Texas</option>
+            <option selected value="Utah">Utah</option>
+            <option selected value="Vermont">Vermont</option>
+            <option selected value="Virginia">Virginia</option>
+            <option selected value="Washington">Washington</option>
+            <option selected value="West Virginia">West Virginia</option>
+            <option selected value="Wisconsin">Wisconsin</option>
+            <option selected value="Wyoming">Wyoming</option>
+            <option selected value="N/A">None Selected</option>
+          </select>
+      </div>
+      <!-- //search for a city input box -->
+    <div class="form-group search">
+      <h6><strong>Search For City</strong></h6>
+      <div class="row">
+        <input class="form-control col-sm-2  ml-3 searchInput" type= "text" value= "" placeholder="Search City">
+        <button class=" col-sm-1 ml-4 btn-primary searchButton">Search<i class= "fa"></i></button>
+      </div>
+    </div>
+    <!-- //todays weather -->
+    <div class="card-columns">
+      <div class = "card-mb-2 weatherDetailsMain">
+        <div class = "card-body">
+          <h4><span class= "city"></span> <span class = "date"></span> <img class="icon" src="" alt=""></img></h4>
+          <strong><p class="date" id="currentDate"></p></strong>
+          <strong><p class="temperature">Temperature: <span></span>*F</p></strong>
+          <strong><p class="temperatureFeelLike">Temperature Feels Like: <span></span>*F</p></strong>
+          <strong><p class="humid">Humidity: <span></span>%</p></strong>
+          <strong><p class="windSpeed">Wind Speed: <span></span>MPH</p></strong>
+          <strong><p class="uvIndex">UV Index: <span></span></p></strong>
+        </div>
+        <div class="card-Images">
+          <div class="cardImages1">
+            <strong><p>UV Index Guide</p></strong>
+                <p><img src="assets/uvIndex-scale2.jpg" alt="">
+          </div>
+          <div class="cardImages2">
+          <strong><p>The Wind Degrees Guide.</p></strong>
+          <p><img src="assets/Compass-weather-degree4.png" alt=""></p>
+        </div>
+      </div>
+    </div>
+  <!-- <//new section for forecast weather -->
+      <div class="card forecastDayWeather1 day1">
+        <div class="card-body">
+          <strong><p class="date">Current Date</p></strong>
+              <p> <img class="icon"><img class="icon" src="" alt="" /></p>
+              <strong><p class="temperature">Temperature: <span></span>*F</p></strong>
+              <strong><p class="temperatureFeelLike">Temperature Feels Like: <span></span>*F</p></strong>
+              <strong><p class="humid">Humidity: <span></span>%</p></strong>
+              <strong><p class="windSpeed">Wind Speed: <span></span>MPH</p></strong>
+              <strong><p class="windDirection">Wind Degrees: <span></span></p></strong>
+        </div>
+      </div>
+      <div class="card forecastDayWeather2 day2">
+          <div class="card-body">
+            <strong><p class="date">Current Date</p></strong>
+                <p> <img class="icon"><img class="icon" src="" alt="" /></p>
+                <strong><p class="temperature">Temperature: <span></span>*F</p></strong>
+                <strong><p class="temperatureFeelLike">Temperature Feels Like: <span></span>*F</p></strong>
+                <strong><p class="humid">Humidity: <span></span>%</p></strong>
+                <strong><p class="windSpeed">Wind Speed: <span></span>MPH</p></strong>
+                <strong><p class="windDirection">Wind Degrees: <span></span></p></strong>
+          </div>
+      </div>
+      <div class="card forecastDayWeather3 day3">
+        <div class="card-body">
+          <strong><p class="date">Current Date</p></strong>
+              <p> <img class="icon"><img class="icon" src="" alt="" /></p>
+              <strong><p class="temperature">Temperature: <span></span>*F</p></strong>
+              <strong><p class="temperatureFeelLike">Temperature Feels Like: <span></span>*F</p></strong>
+              <strong><p class="humid">Humidity: <span></span>%</p></strong>
+              <strong><p class="windSpeed">Wind Speed: <span></span>MPH</p></strong>
+              <strong><p class="windDirection">Wind Degrees: <span></span></p></strong>
+        </div>
+      </div>
+      <div class="card forecastDayWeather4 day4">
+      <div class="card-body">
+        <strong><p class="date">Current Date</p></strong>
+            <p> <img class="icon"><img class="icon" src="" alt="" /></p>
+            <strong><p class="temperature">Temperature: <span></span>*F</p></strong>
+            <strong><p class="temperatureFeelLike">Temperature Feels Like: <span></span>*F</p></strong>
+            <strong><p class="humid">Humidity: <span></span>%</p></strong>
+            <strong><p class="windSpeed">Wind Speed: <span></span>MPH</p></strong>
+            <strong><p class="windDirection">Wind Degrees: <span></span></p></strong>
+        </div>
+      </div>
+      <div class="card forecastDayWeather5 day5">
+        <div class="card-body">
+          <strong><p class="date">Current Date</p></strong>
+          <p> <img class="icon"><img class="icon" src="" alt="" /></p>
+          <strong><p class="temperature">Temperature: <span></span>*F</p></strong>
+          <strong><p class="temperatureFeelLike">Temperature Feels Like: <span></span>*F</p></strong>
+          <strong><p class="humid">Humidity: <span></span>%</p></strong>
+          <strong><p class="windSpeed">Wind Speed: <span></span>MPH</p></strong>
+          <strong><p class="windDirection">Wind Degrees: <span></span></p></strong>
+        </div>
+      </div>
+      <div class="card forecastDayWeather5 day5">
+        <div class="card-body middle">
+          <button-btn>
+            <a class="nav-link" href="https://tylersilverman.github.io/"><h6>Back to Home Page</h6></link>
+          </button>
+        </div>
+      </div>
+   
 
 
 
@@ -59,6 +211,8 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="weather.js"></script>
+    <script src="script.js"></script>
 
 
     
