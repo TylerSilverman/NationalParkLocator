@@ -1,5 +1,10 @@
 $(document).ready(function(){
 
+    var timeNow = moment().format('MMMM Do YYYY, h:mm:ss a');
+        $("#date").text(timeNow);
+        
+    var timeNow = moment().hour();
+
     // Global variables for the API keys that will be used in different AJAX calls.
     var APIWeatherKey = "b7ca59da7f0fc823f65b65547e3d223e";
     var APIParkKey = "IeMPkZS36TxiVcv1TUIT5yzANx6szGLJE5BsDsZA";
