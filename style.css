@@ -1,9 +1,9 @@
-* {
+/* * {
     box-sizing: border-box;
     text-align: center;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     
-  }
+  } */
 /* // this is for the top body of the page  */
   body {
     font-size: 20px;
@@ -149,16 +149,11 @@ footer {
 
 
 /* //this is for the list of the park buttons after they select a state */
-/* .parkBtn {
-  font-style: normal;
-  font: bold;
-  display: block;
-  margin: 5px;
-  margin-left: 100px;
-  /* background: rgb(211, 235, 235); */
-  /* border-style: ridge; */
-
-/* } 
+.parkBtn {
+    background-color: white;
+    color: rgb(30, 58, 144);
+    border: 2px solid #4CAF50;
+  }
 
 /* .parkList {
   margin-right: 40px;
