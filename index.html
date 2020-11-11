@@ -6,7 +6,7 @@
     <title>State Park Search</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
-    <link rel="index.html" href="style.css">
+    <link rel="index.html" type="text" href="style.css">
 </head>
 <body>
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -23,7 +23,7 @@
       </div>
     </div>
 </nav>
-  <div class="jumbotron">
+  <div class="jumbotron"  width="800" height="200">
       <h3 class="display-6">Welcome to The State Park Locator!</h3>
       <p class="lead">This is a simple search that allows the user to search by state, all the state parks located within each state. By choosing the state, it will also show the weather and information to do in each park.</p>
       <div id="date"></div>
@@ -39,8 +39,6 @@
   </div>
 
 <!-- // header -->
-  <header>
-  </header>
 
 <!-- //select a state and park results -->
 <div class="container">
@@ -103,7 +101,7 @@
       </select>
     </div>
     <!-- //favorite park searches -->
-    <div class="favParkList">
+    <div class="favParkList" id=favParkSerach>
       <strong><h4>Favorite Parks <button class="cleanFav"><i class="fas fa-recycle"></i></button></h4></strong>
     </div>
     <div class="parkList">

@@ -414,7 +414,7 @@ $(document).ready(function(){
             var newCardDeck = $("<div class='card-deck'>");
 
             // Clean the div with id forecast-weather and append the new h2, h3, and div.
-            $("#forecast-weather").empty().append(newDayH3, newDayH2, newCardDeck);
+            $("#forecast-weather").empty().append(newDayH3, newDayH2, newCardDeck,);
 
             // For loop to take the one day out of forecast array.
             for (var i=0; i < forecastArray.length; i+=8){
